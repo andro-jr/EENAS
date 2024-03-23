@@ -161,7 +161,7 @@ header {
 .hero {
   background: #063034;
   position: relative;
-  min-height: 100vh; }
+  height: 120vh; }
   .hero .hero-container {
     display: flex;
     align-items: baseline; }
@@ -169,7 +169,7 @@ header {
       position: absolute;
       right: 0;
       width: calc(80% - 12rem);
-      height: 90%;
+      height: 75%;
       border-bottom-left-radius: 8rem;
       overflow: hidden; }
       .hero .hero-container .hero-banner img {
@@ -185,5 +185,48 @@ header {
       z-index: 2;
       align-items: center;
       position: absolute;
-      bottom: 20%;
+      bottom: 30%;
       width: 50%; }
+
+#home-brands {
+  margin-bottom: 4rem;
+  margin-top: -12rem; }
+  #home-brands .brand-row .brand-box {
+    aspect-ratio: 0.78;
+    position: relative; }
+    #home-brands .brand-row .brand-box .brand-img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+    #home-brands .brand-row .brand-box::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      z-index: 2;
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(22, 21, 21, 0.77) 82.5%); }
+    #home-brands .brand-row .brand-box .brand-text {
+      color: white;
+      z-index: 3;
+      position: absolute;
+      bottom: 2.8rem;
+      left: 8rem; }
+      #home-brands .brand-row .brand-box .brand-text span {
+        font-size: 1.8rem;
+        letter-spacing: 0.54px;
+        text-transform: lowercase;
+        position: relative; }
+        #home-brands .brand-row .brand-box .brand-text span::after {
+          content: '';
+          position: absolute;
+          width: 4rem;
+          height: 1px;
+          top: 50%;
+          transform: translateY(-50%);
+          left: -5rem;
+          background: white; }
+      #home-brands .brand-row .brand-box .brand-text h3 {
+        font-size: 4.8rem;
+        letter-spacing: 1.44px;
+        text-transform: uppercase;
+        font-weight: 300; }

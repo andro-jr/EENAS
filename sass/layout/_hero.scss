@@ -1,7 +1,7 @@
 .hero {
     background: $color-secodary-dark;
     position: relative;
-    min-height: 100vh;
+    height: 120vh;
 
 
     .hero-container {
@@ -12,7 +12,7 @@
             position: absolute;
             right: 0;
             width: calc(80% - 12rem);
-            height: 90%;
+            height: 75%;
             border-bottom-left-radius: 8rem;
             overflow: hidden;
 
@@ -28,7 +28,6 @@
                 position: absolute;
                 inset: 0;
                 background: linear-gradient(0deg, rgba(0, 0, 0, 0.69) 6.15%, rgba(0, 0, 0, 0.51) 93.08%);
-
             }
         }
 
@@ -36,7 +35,7 @@
             z-index: 2;
             align-items: center;
             position: absolute;
-            bottom: 20%;
+            bottom: 30%;
             width: 50%;
         }
     }
