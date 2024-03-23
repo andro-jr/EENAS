@@ -1,0 +1,20 @@
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+
+    .header-box {
+        padding: 4.8rem 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header-actions {
+        display: flex;
+        gap: 3.2rem;
+        align-items: center;
+    }
+}

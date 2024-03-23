@@ -1,0 +1,25 @@
+.hero-heading {
+    color: #FFF;
+    font-family: "Barlow", sans-serif;
+    font-size: 10rem;
+    font-style: italic;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: 0.1875rem;
+}
+
+.primary-p {
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.66px;
+}
+
+.hero-p {
+    color: $color-geyser;
+    border-left: 3px solid $color-complementary;
+    padding: 3.2rem;
+    margin-left: 6.4rem;
+}
