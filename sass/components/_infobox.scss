@@ -1,0 +1,25 @@
+.info-box {
+    background: $color-primary;
+    color: white;
+    height: 100%;
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding-bottom: 6.4rem;
+
+    .info-head {
+        font-family: "Barlow", sans-serif;
+
+        font-size: 8rem;
+        font-weight: 800;
+        line-height: 8rem;
+        letter-spacing: 2.367px;
+        text-transform: uppercase;
+
+
+        span {
+            font-style: italic;
+        }
+    }
+}

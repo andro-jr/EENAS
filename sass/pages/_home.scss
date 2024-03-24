@@ -55,5 +55,28 @@
                 }
             }
         }
+
+        .brands-info-box {
+            height: 100%;
+            position: relative;
+            z-index: -1;
+
+            .info-box {
+                padding-top: 12rem;
+            }
+
+            &::after {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                right: -100%;
+                background: $color-primary;
+
+                @include respond(ml) {
+                    content: '';
+                }
+            }
+        }
     }
 }

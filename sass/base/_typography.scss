@@ -23,3 +23,21 @@
     padding: 3.2rem;
     margin-left: 6.4rem;
 }
+
+.bordered-text {
+    font-family: "Barlow", sans-serif;
+    color: rgb(255, 255, 255);
+    -webkit-text-fill-color: rgba(255, 255, 255, 0);
+    /* Will override color (regardless of order) */
+    -webkit-text-stroke: 2px rgb(255, 255, 255);
+}
+
+.secondary-p {
+    font-family: "Barlow", sans-serif;
+    font-size: 1.8rem;
+    font-style: italic;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: 0.54px;
+    text-transform: uppercase;
+}
