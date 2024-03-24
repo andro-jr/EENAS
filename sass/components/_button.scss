@@ -1,0 +1,60 @@
+.primary-button {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: $color-white;
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    gap: 2rem;
+
+    .button-arrow {
+        border: 2px solid $color-white;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        position: relative;
+        transition: all 0.5s ease-out;
+        overflow: hidden;
+
+        img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 2rem;
+            transition: all 0.5s ease-out;
+
+            &.arrow-invisible {
+                transform: translate(-275%, -50%);
+            }
+        }
+    }
+
+    &:hover {
+        color: $color-white;
+
+        .button-arrow {
+
+            transform: scale(1.1);
+
+            img {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 2rem;
+
+                &.arrow-invisible {
+                    transform: translate(-50%, -50%);
+                }
+
+                &.arrow-visible {
+                    transform: translate(275%, -50%);
+                }
+            }
+        }
+    }
+
+}
