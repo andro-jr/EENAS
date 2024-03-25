@@ -54,6 +54,10 @@ input::-webkit-inner-spin-button {
 input[type=number] {
   -moz-appearance: textfield; }
 
+@media screen and (min-width: 1600px) {
+  .container {
+    max-width: 1540px; } }
+
 .hero-heading {
   color: #FFF;
   font-family: "Barlow", sans-serif;
@@ -133,6 +137,7 @@ input[type=number] {
   .shape-container .rectangle-small-bottom {
     position: absolute;
     width: 70%;
+    height: 6rem;
     top: 100%; }
 
 .mb-8 {
@@ -195,6 +200,32 @@ input[type=number] {
         .primary-button:hover .button-arrow img.arrow-visible {
           transform: translate(275%, -50%); }
 
+.product-col {
+  margin: 2rem;
+  border-radius: 2.302px;
+  background: #FFF;
+  box-shadow: 0px 5.558px 13.896px 0px rgba(0, 0, 0, 0.1);
+  padding: 1.6rem;
+  transition: all 0.3s ease-out; }
+  .product-col a {
+    display: inline-block;
+    text-decoration: none; }
+    .product-col a .product-card .product-image {
+      margin-bottom: 2.4rem;
+      aspect-ratio: 1; }
+      .product-col a .product-card .product-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain; }
+    .product-col a .product-card .product-title {
+      color: #262626;
+      font-size: 1.8rem;
+      letter-spacing: 0.552px;
+      text-align: center; }
+  .product-col:hover {
+    transform: translateY(-1rem);
+    box-shadow: 0px 5.558px 16.896px 0px rgba(0, 0, 0, 0.064); }
+
 .modal-container {
   position: fixed;
   inset: 0;
@@ -221,8 +252,22 @@ input[type=number] {
   padding: 4rem;
   display: flex;
   flex-direction: column;
-  justify-content: end;
-  padding-bottom: 6.4rem; }
+  justify-content: center; }
+  .info-box.product-info-box {
+    padding-left: 0;
+    position: relative; }
+    @media only screen and (max-width: 1600px) {
+      .info-box.product-info-box {
+        justify-content: end;
+        padding-bottom: 6.4rem; } }
+    .info-box.product-info-box::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: -100%;
+      background: #0E54A4; }
   .info-box .info-head {
     font-family: "Barlow", sans-serif;
     font-size: 8rem;
@@ -337,3 +382,6 @@ header {
       @media only screen and (max-width: 1600px) {
         #home-brands .brand-row .brands-info-box::after {
           content: ''; } }
+
+.products-row {
+  padding: 4rem 0; }

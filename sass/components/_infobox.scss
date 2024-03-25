@@ -5,8 +5,31 @@
     padding: 4rem;
     display: flex;
     flex-direction: column;
-    justify-content: end;
-    padding-bottom: 6.4rem;
+    justify-content: center;
+
+
+
+    &.product-info-box {
+        padding-left: 0;
+        position: relative;
+
+        @include respond(ml) {
+            justify-content: end;
+            padding-bottom: 6.4rem;
+
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: -100%;
+            background: $color-primary;
+        }
+
+    }
 
     .info-head {
         font-family: "Barlow", sans-serif;
