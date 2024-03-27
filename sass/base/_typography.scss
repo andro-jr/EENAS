@@ -6,6 +6,11 @@
     font-weight: 800;
     line-height: normal;
     letter-spacing: 0.1875rem;
+
+    @include respond(xxl) {
+        font-size: 6.4rem;
+
+    }
 }
 
 .primary-p {
@@ -15,6 +20,11 @@
     font-weight: 300;
     line-height: normal;
     letter-spacing: 0.66px;
+
+    @include respond(xxl) {
+        font-size: 2rem;
+
+    }
 }
 
 .hero-p {
