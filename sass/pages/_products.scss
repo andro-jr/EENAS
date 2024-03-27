@@ -7,3 +7,17 @@
         padding: 4rem 0;
     }
 }
+
+.product-display-box {
+    margin-right: 6.4rem;
+    border-radius: 2.4rem;
+    overflow: hidden;
+
+
+    .product-display-image {
+        width: 100%;
+        aspect-ratio: 3/2;
+        object-fit: cover;
+    }
+
+}

@@ -140,6 +140,10 @@ input[type=number] {
     height: 6rem;
     top: 100%; }
 
+.product-showcase-space {
+  margin-top: -1px;
+  margin-bottom: 6rem; }
+
 .mb-8 {
   margin-bottom: 0.8rem; }
 
@@ -423,3 +427,12 @@ header {
   padding-bottom: 12rem; }
   .products-info-box .products-row {
     padding: 4rem 0; }
+
+.product-display-box {
+  margin-right: 6.4rem;
+  border-radius: 2.4rem;
+  overflow: hidden; }
+  .product-display-box .product-display-image {
+    width: 100%;
+    aspect-ratio: 3/2;
+    object-fit: cover; }
