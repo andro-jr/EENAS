@@ -3,12 +3,13 @@
     border-radius: 2.302px;
     background: #FFF;
     box-shadow: 0px 5.558px 13.896px 0px rgba(0, 0, 0, 0.10);
-    padding: 1.6rem;
     transition: all 0.3s ease-out;
 
     a {
         display: inline-block;
         text-decoration: none;
+        padding: 1.6rem;
+
 
         .product-card {
 
@@ -35,7 +36,7 @@
 
     &:hover {
         transform: translateY(-1rem);
-        box-shadow: 0px 5.558px 16.896px 0px rgba(0, 0, 0, 0.064);
+        box-shadow: 0px 10.558px 20.896px 0px rgba(0, 0, 0, 0.125);
 
     }
 }

@@ -1,0 +1,38 @@
+.custom-navigation-section {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    bottom: 0;
+    max-height: 16rem;
+
+    .divider-bg {
+        width: 100%;
+    }
+
+    .nav-container {
+        position: absolute;
+        inset: 0;
+    }
+
+
+
+    .custom-navigation {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 2;
+
+        display: flex;
+        gap: 2rem;
+
+
+
+        .nav {
+            cursor: pointer;
+        }
+    }
+
+
+
+}
