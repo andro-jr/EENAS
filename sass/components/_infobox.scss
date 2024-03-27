@@ -7,6 +7,12 @@
     flex-direction: column;
     justify-content: center;
 
+    .info-logo {
+        img {
+            width: 28rem;
+        }
+    }
+
 
 
     &.product-info-box {

@@ -279,6 +279,8 @@ input[type=number] {
   display: flex;
   flex-direction: column;
   justify-content: center; }
+  .info-box .info-logo img {
+    width: 28rem; }
   .info-box.product-info-box {
     padding-left: 0;
     position: relative;
@@ -429,7 +431,6 @@ header {
     padding: 4rem 0; }
 
 .product-display-box {
-  margin-right: 6.4rem;
   border-radius: 2.4rem;
   overflow: hidden; }
   .product-display-box .product-display-image {
