@@ -1,0 +1,22 @@
+.socials-container {
+    color: $color-white;
+
+    .social-icons {
+        display: flex;
+        gap: 4rem;
+
+        a {
+            img {
+                height: 4rem;
+            }
+        }
+    }
+
+    .social-gallery {
+        img {
+            width: 100%;
+            aspect-ratio: 1;
+            object-fit: cover;
+        }
+    }
+}

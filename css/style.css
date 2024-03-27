@@ -132,6 +132,15 @@ input[type=number] {
   letter-spacing: 1.92px;
   text-transform: uppercase; }
 
+.bold-p {
+  font-family: "Barlow", sans-serif;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 2px;
+  text-transform: uppercase; }
+
 .section-space {
   margin: 6rem 0; }
 
@@ -423,6 +432,18 @@ header {
       position: absolute;
       bottom: 30%;
       width: 50%; }
+
+.socials-container {
+  color: #FAFAFA; }
+  .socials-container .social-icons {
+    display: flex;
+    gap: 4rem; }
+    .socials-container .social-icons a img {
+      height: 4rem; }
+  .socials-container .social-gallery img {
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover; }
 
 #home-brands {
   margin-bottom: 4rem;
