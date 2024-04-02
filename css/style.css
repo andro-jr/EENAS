@@ -474,6 +474,7 @@ header {
 .secondary-hero {
   height: 50vh;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.67) 6.15%, rgba(0, 0, 0, 0.5) 93.08%), url("../../assets/img/about-hero-bg.jpeg") lightgray 50%/cover no-repeat;
+  background-position: top;
   position: relative;
   border-bottom-right-radius: 18rem; }
   .secondary-hero .secondary-hero-title {
@@ -625,6 +626,29 @@ footer {
 .about-p {
   width: 90%;
   margin-left: auto; }
+
+.brands-container .brands-row {
+  display: flex; }
+  .brands-container .brands-row .brands-col {
+    flex-basis: 50%; }
+    .brands-container .brands-row .brands-col.brand-image-col {
+      position: relative; }
+      .brands-container .brands-row .brands-col.brand-image-col img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute; }
+    .brands-container .brands-row .brands-col.brand-text-col {
+      padding: 12rem 10rem;
+      background: #063034; }
+      .brands-container .brands-row .brands-col.brand-text-col .brand-info {
+        color: #FAFAFA;
+        font-size: 2.4rem;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 3.4rem;
+        /* 141.667% */
+        letter-spacing: 0.724px; }
 
 .products-info-box {
   padding-bottom: 12rem; }

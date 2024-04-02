@@ -2,3 +2,41 @@
     width: 90%;
     margin-left: auto;
 }
+
+.brands-container {
+    .brands-row {
+        display: flex;
+
+        .brands-col {
+            flex-basis: 50%;
+
+            &.brand-image-col {
+                position: relative;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    position: absolute;
+                }
+
+            }
+
+            &.brand-text-col {
+                padding: 12rem 10rem;
+                background: $color-secodary-dark;
+
+                .brand-info {
+                    color: $color-white;
+                    font-size: 2.4rem;
+                    font-style: normal;
+                    font-weight: 300;
+                    line-height: 3.4rem;
+                    /* 141.667% */
+                    letter-spacing: 0.724px;
+                }
+            }
+        }
+    }
+
+}
