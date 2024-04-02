@@ -104,3 +104,26 @@
     letter-spacing: 2px;
     text-transform: uppercase;
 }
+
+.tertiary-p {
+    color: $color-medium-black;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 3rem;
+    /* 166.667% */
+    letter-spacing: 0.54px;
+
+
+}
+
+.tertiary-p-bold {
+
+    color: $color-black;
+    font-size: 2.4rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 3.4rem;
+    letter-spacing: 0.72px;
+
+}

@@ -147,6 +147,23 @@ input[type=number] {
   letter-spacing: 2px;
   text-transform: uppercase; }
 
+.tertiary-p {
+  color: #171717;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 3rem;
+  /* 166.667% */
+  letter-spacing: 0.54px; }
+
+.tertiary-p-bold {
+  color: #0A0A0A;
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 3.4rem;
+  letter-spacing: 0.72px; }
+
 .section-space {
   margin: 6rem 0; }
 
@@ -174,6 +191,15 @@ input[type=number] {
 .text-center {
   text-align: center; }
 
+.bold {
+  font-weight: 600; }
+
+.quote-box {
+  position: relative; }
+  .quote-box .quote {
+    position: absolute;
+    bottom: calc(100% + 2.8rem); }
+
 .mb-8 {
   margin-bottom: 0.8rem; }
 
@@ -191,6 +217,12 @@ input[type=number] {
 
 .mb-64 {
   margin-bottom: 6.4rem; }
+
+.mb-72 {
+  margin-bottom: 7.2rem; }
+
+.mb-80 {
+  margin-bottom: 8rem; }
 
 .primary-button {
   text-transform: uppercase;
@@ -589,6 +621,10 @@ footer {
 .product-section {
   position: relative;
   overflow: hidden; }
+
+.about-p {
+  width: 90%;
+  margin-left: auto; }
 
 .products-info-box {
   padding-bottom: 12rem; }

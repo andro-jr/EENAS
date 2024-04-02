@@ -33,3 +33,17 @@
 .text-center {
     text-align: center;
 }
+
+.bold {
+    font-weight: 600;
+}
+
+.quote-box {
+    position: relative;
+
+    .quote {
+        position: absolute;
+        bottom: calc(100% + 2.8rem);
+
+    }
+}
