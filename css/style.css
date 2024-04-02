@@ -640,15 +640,37 @@ footer {
         position: absolute; }
     .brands-container .brands-row .brands-col.brand-text-col {
       padding: 12rem 10rem;
-      background: #063034; }
+      background: #063034;
+      position: relative; }
       .brands-container .brands-row .brands-col.brand-text-col .brand-info {
         color: #FAFAFA;
         font-size: 2.4rem;
         font-style: normal;
-        font-weight: 300;
-        line-height: 3.4rem;
+        font-weight: 200;
+        line-height: 3.6rem;
         /* 141.667% */
         letter-spacing: 0.724px; }
+      .brands-container .brands-row .brands-col.brand-text-col::after {
+        content: attr(data-content);
+        -webkit-text-stroke-color: rgba(132, 172, 212, 0.2);
+        -webkit-text-fill-color: rgba(235, 0, 0, 0);
+        -webkit-text-stroke: 6px rgba(132, 172, 212, 0.2);
+        font-family: Barlow;
+        font-size: 12rem;
+        font-style: normal;
+        font-weight: 800;
+        /* 173.25% */
+        letter-spacing: 1.4rem;
+        text-transform: uppercase;
+        line-height: 1.5;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%) rotate(-180deg);
+        right: 0;
+        writing-mode: vertical-lr;
+        text-orientation: mixed;
+        white-space: nowrap;
+        text-align: center; }
 
 .products-info-box {
   padding-bottom: 12rem; }
