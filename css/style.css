@@ -164,6 +164,26 @@ input[type=number] {
   line-height: 3.4rem;
   letter-spacing: 0.72px; }
 
+.tertiary-heading {
+  color: #262626;
+  font-family: "Barlow", sans-serif;
+  font-size: 4.8rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.44px;
+  text-transform: uppercase; }
+
+.heading-support {
+  color: #737373;
+  font-size: 2.2rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: 0.66px;
+  display: inline-block;
+  width: 50%; }
+
 .section-space {
   margin: 6rem 0; }
 
@@ -671,6 +691,52 @@ footer {
         text-orientation: mixed;
         white-space: nowrap;
         text-align: center; }
+
+.team-container .team-card {
+  aspect-ratio: 5/8;
+  border-radius: 4rem;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer; }
+  .team-container .team-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top; }
+  .team-container .team-card::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(0deg, rgba(0, 153, 255, 0.7) 0%, rgba(0, 153, 255, 0.7) 100%), url(<path-to-image>) lightgray 50%/cover no-repeat;
+    opacity: 0;
+    transition: all 0.3s ease-out; }
+  .team-container .team-card .team-detail {
+    position: absolute;
+    z-index: 2;
+    color: #FAFAFA;
+    text-align: center;
+    width: 100%;
+    padding: 2rem;
+    transition: all 0.3s ease-out;
+    bottom: -2rem;
+    opacity: 0; }
+    .team-container .team-card .team-detail .team-name {
+      font-size: 2.8rem;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      letter-spacing: 0.96px; }
+    .team-container .team-card .team-detail .team-post {
+      font-size: 2rem;
+      font-style: italic;
+      font-weight: 400;
+      line-height: normal;
+      letter-spacing: 0.69px; }
+  .team-container .team-card:hover::after {
+    opacity: 0.7; }
+  .team-container .team-card:hover .team-detail {
+    bottom: 6rem;
+    opacity: 1; }
 
 .products-info-box {
   padding-bottom: 12rem; }
