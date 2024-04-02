@@ -42,3 +42,25 @@
 
 
 }
+
+.secondary-hero {
+    height: 50vh;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.67) 6.15%, rgba(0, 0, 0, 0.50) 93.08%), url('../../assets/img/about-hero-bg.jpeg') lightgray 50% / cover no-repeat;
+
+    position: relative;
+
+    border-bottom-right-radius: 18rem;
+
+    .secondary-hero-title {
+        font-family: "Barlow", sans-serif;
+        color: $color-white;
+        font-size: 10rem;
+        font-style: italic;
+        font-weight: 800;
+        line-height: normal;
+        letter-spacing: 3px;
+
+        position: absolute;
+        bottom: 4rem;
+    }
+}
