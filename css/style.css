@@ -184,6 +184,34 @@ input[type=number] {
   display: inline-block;
   width: 50%; }
 
+.outlined-head {
+  color: #262626;
+  font-family: "Nunito Sans";
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.72px;
+  position: relative;
+  display: inline-block; }
+  .outlined-head::after {
+    content: '';
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 0;
+    width: 40%;
+    border-radius: 2px;
+    height: 5px;
+    background: #0E54A4; }
+
+.category-title {
+  color: #0A0A0A;
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.72px; }
+
 .section-space {
   margin: 6rem 0; }
 
@@ -359,6 +387,59 @@ input[type=number] {
     transform: translateY(-1rem);
     box-shadow: 0px 10.558px 20.896px 0px rgba(0, 0, 0, 0.125); }
 
+.form .form-row {
+  margin-bottom: 3.2rem; }
+  .form .form-row .form-input {
+    width: 100%;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #D4D4D4;
+    padding: 0.8rem 0;
+    color: #171717;
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 123%;
+    letter-spacing: 0.42px; }
+    .form .form-row .form-input::placeholder {
+      color: #999;
+      font-size: 1.4rem;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 123%;
+      letter-spacing: 0.42px; }
+
+.custom-checkbox {
+  padding: 0;
+  list-style: none;
+  margin-bottom: 0.5rem; }
+  .custom-checkbox label {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    color: #525252;
+    font-size: 2.4rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.72px;
+    cursor: pointer;
+    width: fit-content; }
+    .custom-checkbox label .checkbox {
+      width: 2rem;
+      height: 2rem;
+      border-radius: 4px;
+      border: 2px solid #0E54A4;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .custom-checkbox label .checkbox i {
+        color: #FAFAFA;
+        font-size: 10px; }
+  .custom-checkbox input {
+    display: none; }
+    .custom-checkbox input:checked ~ label .checkbox {
+      background: #0E54A4; }
+
 .custom-navigation-section {
   position: absolute;
   left: 0;
@@ -493,7 +574,6 @@ header {
 
 .secondary-hero {
   height: 50vh;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.67) 6.15%, rgba(0, 0, 0, 0.5) 93.08%), url("../../assets/img/about-hero-bg.jpeg") lightgray 50%/cover no-repeat;
   background-position: top;
   position: relative;
   border-bottom-right-radius: 18rem; }
@@ -750,3 +830,33 @@ footer {
     width: 100%;
     aspect-ratio: 3/2;
     object-fit: cover; }
+
+.filter-row .form-row {
+  margin-bottom: 3.2rem;
+  padding-bottom: 3.2rem; }
+  .filter-row .form-row:not(:last-child) {
+    border-bottom: 1px solid #737373; }
+
+.filter-row .filter-head {
+  color: #262626;
+  font-size: 2.2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 123%;
+  /* 27.06px */
+  letter-spacing: 0.66px;
+  text-transform: uppercase;
+  padding-left: 3.2rem;
+  position: relative; }
+  .filter-row .filter-head::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #0A0A0A;
+    width: 1.6rem;
+    height: 2px;
+    left: 0; }
+
+.filter-row .filter-list {
+  padding: 0; }
