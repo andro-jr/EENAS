@@ -1,0 +1,40 @@
+.event-detail-box {
+    max-width: 80rem;
+    margin: auto;
+
+    .event-title {
+        color: var(--light-black, #262626);
+        font-family: "Nunito Sans";
+        font-size: 5.3rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 6rem;
+        /* 118.077% */
+        letter-spacing: 0.52px;
+        margin-bottom: 1.6rem;
+    }
+
+    .event-date {
+        display: flex;
+        gap: 1rem;
+        color: $color-complementary;
+        font-family: Barlow;
+        font-size: 1.6rem;
+        font-style: italic;
+        font-weight: 700;
+        line-height: 1.8rem;
+        /* 122.222% */
+        letter-spacing: 0.925px;
+        margin-bottom: 3.2rem;
+    }
+
+    img {
+        margin-bottom: 3.2rem;
+    }
+
+    p {
+        color: $color-dark-gray;
+        font-weight: 400;
+        margin-bottom: 2.4rem;
+    }
+}
