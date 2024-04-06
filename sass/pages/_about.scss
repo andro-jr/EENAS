@@ -39,7 +39,6 @@
 
                 &::after {
                     content: attr(data-content);
-                    -webkit-text-stroke-color: rgba(132, 172, 212, 0.20);
                     -webkit-text-fill-color: rgba(235, 0, 0, 0);
                     -webkit-text-stroke: 6px rgba(132, 172, 212, 0.20);
                     font-family: Barlow;
@@ -57,9 +56,7 @@
                     right: 0;
 
                     writing-mode: vertical-lr;
-                    text-orientation: mixed;
-                    white-space: nowrap;
-                    text-align: center;
+
                 }
             }
         }

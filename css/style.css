@@ -755,7 +755,6 @@ footer {
         letter-spacing: 0.724px; }
       .brands-container .brands-row .brands-col.brand-text-col::after {
         content: attr(data-content);
-        -webkit-text-stroke-color: rgba(132, 172, 212, 0.2);
         -webkit-text-fill-color: rgba(235, 0, 0, 0);
         -webkit-text-stroke: 6px rgba(132, 172, 212, 0.2);
         font-family: Barlow;
@@ -770,10 +769,7 @@ footer {
         top: 50%;
         transform: translateY(-50%) rotate(-180deg);
         right: 0;
-        writing-mode: vertical-lr;
-        text-orientation: mixed;
-        white-space: nowrap;
-        text-align: center; }
+        writing-mode: vertical-lr; }
 
 .team-container .team-card {
   aspect-ratio: 5/8;
