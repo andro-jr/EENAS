@@ -16,6 +16,8 @@
             padding-block: 10rem;
             height: 100%;
             margin-right: -8rem;
+            position: relative;
+            z-index: 2;
 
             iframe {
                 box-shadow: 6px 8px 9px 0px rgba(0, 0, 0, 0.14);
