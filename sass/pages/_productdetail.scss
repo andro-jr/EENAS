@@ -1,0 +1,51 @@
+#prodetail-details {
+    .product-details {
+        .product-category {
+            color: $color-gray;
+            font-size: 1.8rem;
+            font-weight: 600;
+            letter-spacing: 1.08px;
+            text-transform: uppercase;
+            display: inline-block;
+        }
+
+        .product-title {
+            color: $color-black;
+            font-size: 4.8rem;
+            font-weight: 600;
+            letter-spacing: 2.88px;
+            text-transform: uppercase;
+        }
+
+        .product-details {
+            .details-title {
+                color: $color-gray;
+                font-size: 2.2rem;
+                letter-spacing: 0.66px;
+                text-transform: uppercase;
+                border-bottom: 1px solid $color-dark-white;
+                padding-bottom: 0.8rem;
+            }
+
+            .details-row {
+                margin-bottom: 1.4rem;
+
+                .detail-head {
+                    color: $color-light-black;
+                    font-size: 1.8rem;
+                    font-weight: 600;
+                    letter-spacing: 1.08px;
+                    min-width: 30rem;
+                    display: inline-block;
+                }
+
+                .detail-value {
+                    color: $color-dark-gray;
+                    font-size: 18px;
+                    font-weight: 600;
+                    letter-spacing: 1.08px;
+                }
+            }
+        }
+    }
+}
