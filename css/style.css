@@ -248,6 +248,9 @@ input[type=number] {
     position: absolute;
     bottom: calc(100% + 2.8rem); }
 
+.text-italic {
+  font-style: italic; }
+
 .mb-8 {
   margin-bottom: 0.8rem; }
 
@@ -817,6 +820,57 @@ footer {
   .team-container .team-card:hover .team-detail {
     bottom: 6rem;
     opacity: 1; }
+
+#contact-details .contact-box {
+  background: #063034;
+  position: relative;
+  margin-right: 8rem; }
+  #contact-details .contact-box::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: url("../../assets/img/contact-texture.png"); }
+  #contact-details .contact-box .site-map {
+    padding-block: 10rem;
+    height: 100%;
+    margin-right: -8rem; }
+    #contact-details .contact-box .site-map iframe {
+      box-shadow: 6px 8px 9px 0px rgba(0, 0, 0, 0.14);
+      height: 100%;
+      width: 100%; }
+  #contact-details .contact-box .contact-details {
+    padding: 6.4rem;
+    position: relative;
+    z-index: 2; }
+    #contact-details .contact-box .contact-details .contact-head {
+      color: #FAFAFA;
+      font-family: "Barlow", sans-serif;
+      font-size: 6.4rem;
+      font-style: italic;
+      font-weight: 800;
+      letter-spacing: 1.92px; }
+      #contact-details .contact-box .contact-details .contact-head span {
+        display: inline-block;
+        width: 100%; }
+    #contact-details .contact-box .contact-details .primary-p {
+      color: #FAFAFA; }
+    #contact-details .contact-box .contact-details .contact-detail-row {
+      margin-bottom: 3.2rem; }
+      #contact-details .contact-box .contact-details .contact-detail-row .contact-detail-head {
+        color: #E5E5E5;
+        font-size: 1.6rem;
+        letter-spacing: 0.48px;
+        position: relative;
+        margin-bottom: 1.6rem;
+        text-transform: uppercase; }
+        #contact-details .contact-box .contact-details .contact-detail-row .contact-detail-head::after {
+          content: '';
+          position: absolute;
+          top: 120%;
+          width: 4rem;
+          height: 1px;
+          background: #E5E5E5;
+          left: 0; }
 
 .products-info-box {
   padding-bottom: 12rem; }
