@@ -354,7 +354,7 @@ input[type=number] {
     .primary-card .card-contents .card-info {
       display: flex;
       align-items: center;
-      gap: 1rem; }
+      gap: 5px; }
       .primary-card .card-contents .card-info span {
         color: #FFF;
         font-family: "Barlow", sans-serif;
@@ -363,6 +363,8 @@ input[type=number] {
         font-weight: 500;
         line-height: 1.2rem;
         letter-spacing: 0.629px; }
+      .primary-card .card-contents .card-info img {
+        width: 2rem; }
 
 .product-col {
   margin: 2rem;
@@ -975,7 +977,7 @@ footer {
     line-height: 1.8rem;
     /* 122.222% */
     letter-spacing: 0.925px;
-    margin-bottom: 3.2rem; }
+    margin-bottom: 1.6rem; }
   .event-detail-box img {
     margin-bottom: 3.2rem; }
   .event-detail-box p {

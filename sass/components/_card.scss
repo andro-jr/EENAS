@@ -48,7 +48,7 @@
         .card-info {
             display: flex;
             align-items: center;
-            gap: 1rem;
+            gap: 5px;
 
             span {
                 color: #FFF;
@@ -58,6 +58,10 @@
                 font-weight: 500;
                 line-height: 1.2rem;
                 letter-spacing: 0.629px;
+            }
+
+            img {
+                width: 2rem;
             }
         }
     }
