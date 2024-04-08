@@ -32,6 +32,25 @@ $(".product-carousel").owlCarousel({
 });
 
 
+
+
+
+const navHam = document.querySelector('#navHam');
+const navContainer = document.querySelector('#navContainer');
+const navBox = document.querySelector('#navContainer');
+const navClose = document.querySelector('#navClose');
+
+navHam.addEventListener('click', () => {
+    navContainer.classList.remove('hide-nav')
+    navContainer.classList.add('show-nav')
+})
+
+navClose.addEventListener('click', () => {
+    navContainer.classList.add('hide-nav')
+    navContainer.classList.remove('show-nav')
+
+})
+
 // Lightbox
 
 $(document).ready(function () {

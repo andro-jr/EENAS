@@ -16,5 +16,113 @@ header {
         display: flex;
         gap: 3.2rem;
         align-items: center;
+
+        #navHam {
+            cursor: pointer;
+        }
     }
+
+
+
+    .navigation-container {
+        position: fixed;
+        inset: 0;
+        display: flex;
+        justify-content: end;
+
+
+        &.show-nav {
+            visibility: visible;
+            opacity: 1;
+
+            .navigation-box {
+                animation: slideIn 0.2s linear;
+            }
+        }
+
+        &.hide-nav {
+            .navigation-box {
+                animation: slideOut 0.2s linear;
+            }
+
+            visibility: hidden;
+            opacity: 0;
+
+
+        }
+
+        .navigation-box {
+            background: $color-primary;
+            height: 100%;
+            width: 60rem;
+            position: relative;
+            padding: 4.8rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+
+
+            .nav-socials {
+                display: flex;
+                gap: 2rem;
+                align-items: baseline;
+
+                .nav-social {
+                    color: $color-white;
+                    font-size: 3.2rem;
+                    text-decoration: none;
+                }
+            }
+
+            #navClose {
+                position: absolute;
+                top: 4rem;
+                right: 4rem;
+                width: 2rem;
+                cursor: pointer;
+            }
+
+            nav {
+                display: flex;
+                flex-direction: column;
+
+
+                a {
+                    width: fit-content;
+                    color: $color-white;
+                    font-family: Barlow;
+                    font-size: 4rem;
+                    font-weight: 800;
+                    letter-spacing: 1.531px;
+                    text-transform: uppercase;
+                    text-decoration: none;
+                    gap: 2rem;
+                    transition: all 0.3s;
+
+                    @include respond(xxl) {
+                        font-size: 3.2rem;
+                    }
+
+                    @include respond(lg) {
+                        font-size: 2.4rem;
+                    }
+
+                    &:hover {
+                        -webkit-text-fill-color: rgba(255, 255, 255, 0);
+                        -webkit-text-stroke: 2px rgb(255, 255, 255);
+                    }
+
+                    &.active {
+                        -webkit-text-fill-color: rgba(255, 255, 255, 0);
+                        -webkit-text-stroke: 2px rgb(255, 255, 255);
+                        font-style: italic;
+                    }
+                }
+            }
+        }
+    }
+
+
+
 }
