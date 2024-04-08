@@ -1,0 +1,31 @@
+.gallery-box {
+    line-height: 0;
+    -webkit-column-count: 4;
+    -webkit-column-gap: 10px;
+    -moz-column-count: 4;
+    -moz-column-gap: 1rem;
+    column-count: 4;
+    column-gap: 1rem;
+
+    @include respond(md) {
+        column-count: 3;
+    }
+
+    @include respond(sm) {
+        column-count: 2;
+    }
+
+    @include respond(xs) {
+        column-count: 1;
+    }
+
+    a {
+        flex-basis: 25%;
+    }
+
+    img {
+        width: 100%;
+        height: auto !important;
+        margin-bottom: 1rem;
+    }
+}

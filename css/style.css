@@ -984,3 +984,24 @@ footer {
     color: #525252;
     font-weight: 400;
     margin-bottom: 2.4rem; }
+
+.gallery-box {
+  line-height: 0;
+  -webkit-column-count: 4;
+  -webkit-column-gap: 10px;
+  -moz-column-count: 4;
+  -moz-column-gap: 1rem;
+  column-count: 4;
+  column-gap: 1rem; }
+  @media only screen and (max-width: 768px) {
+    .gallery-box {
+      column-count: 3; } }
+  @media only screen and (max-width: 576px) {
+    .gallery-box {
+      column-count: 2; } }
+  .gallery-box a {
+    flex-basis: 25%; }
+  .gallery-box img {
+    width: 100%;
+    height: auto !important;
+    margin-bottom: 1rem; }
