@@ -1148,3 +1148,64 @@ footer {
     width: 100%;
     height: auto !important;
     margin-bottom: 1rem; }
+
+.badminton-cup-logo {
+  width: 40rem; }
+
+#match-fixture .fixture-box {
+  border-radius: 2rem;
+  background: linear-gradient(0deg, rgba(6, 48, 52, 0.8) 0%, rgba(6, 48, 52, 0.8) 100%), url("../../assets/img/fixture-bg.jpeg") lightgray 50%/cover no-repeat;
+  padding: 4rem 6.4rem; }
+  #match-fixture .fixture-box .fixture-head {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 3.2rem;
+    border-bottom: 1px solid #D4D4D4;
+    margin-bottom: 4rem; }
+    #match-fixture .fixture-box .fixture-head h3 {
+      color: #FAFAFA;
+      font-size: 4rem;
+      font-weight: 700;
+      letter-spacing: 1.2px; }
+    #match-fixture .fixture-box .fixture-head .fixture-filters {
+      display: flex;
+      gap: 2rem; }
+      #match-fixture .fixture-box .fixture-head .fixture-filters .filter select {
+        border-radius: 6px;
+        background: rgba(229, 229, 229, 0.2);
+        color: #FAFAFA;
+        font-size: 1.8rem;
+        letter-spacing: 1.1px;
+        padding: 1rem;
+        outline: none;
+        border: none; }
+        #match-fixture .fixture-box .fixture-head .fixture-filters .filter select option {
+          color: #171717; }
+  #match-fixture .fixture-box .fixture .fixture-row {
+    padding: 3.2rem 0;
+    display: flex;
+    justify-content: space-between; }
+    #match-fixture .fixture-box .fixture .fixture-row:not(:last-child) {
+      border-bottom: 1px solid rgba(229, 229, 229, 0.5); }
+    #match-fixture .fixture-box .fixture .fixture-row .participants {
+      display: flex;
+      gap: 8rem;
+      align-items: center; }
+      #match-fixture .fixture-box .fixture .fixture-row .participants .participant-name {
+        color: #FAFAFA;
+        font-size: 2rem;
+        font-weight: 600;
+        letter-spacing: 1.1px; }
+      #match-fixture .fixture-box .fixture .fixture-row .participants .vs-icon {
+        width: 4rem; }
+    #match-fixture .fixture-box .fixture .fixture-row .result-box {
+      color: #FAFAFA;
+      font-size: 1.6rem;
+      font-weight: 600;
+      letter-spacing: 0.75px;
+      text-transform: uppercase;
+      opacity: 0.8;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      cursor: pointer; }

@@ -1,0 +1,91 @@
+.badminton-cup-logo {
+    width: 40rem;
+}
+
+#match-fixture {
+    .fixture-box {
+        border-radius: 2rem;
+        background: linear-gradient(0deg, rgba(6, 48, 52, 0.80) 0%, rgba(6, 48, 52, 0.80) 100%), url('../../assets/img/fixture-bg.jpeg') lightgray 50% / cover no-repeat;
+        padding: 4rem 6.4rem;
+
+        .fixture-head {
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 3.2rem;
+            border-bottom: 1px solid $color-light-gray;
+            margin-bottom: 4rem;
+
+            h3 {
+                color: $color-white;
+                font-size: 4rem;
+                font-weight: 700;
+                letter-spacing: 1.2px;
+            }
+
+            .fixture-filters {
+                display: flex;
+                gap: 2rem;
+
+                .filter {
+                    select {
+                        border-radius: 6px;
+                        background: rgba(229, 229, 229, 0.20);
+                        color: $color-white;
+                        font-size: 1.8rem;
+                        letter-spacing: 1.1px;
+                        padding: 1rem;
+                        outline: none;
+                        border: none;
+
+                        option {
+                            color: $color-medium-black;
+                        }
+                    }
+                }
+            }
+        }
+
+        .fixture {
+            .fixture-row {
+                padding: 3.2rem 0;
+                display: flex;
+                justify-content: space-between;
+
+                &:not(:last-child) {
+                    border-bottom: 1px solid rgba(229, 229, 229, 0.50);
+                }
+
+                .participants {
+                    display: flex;
+                    gap: 8rem;
+                    align-items: center;
+
+                    .participant-name {
+                        color: $color-white;
+                        font-size: 2rem;
+                        font-weight: 600;
+                        letter-spacing: 1.1px;
+                    }
+
+                    .vs-icon {
+                        width: 4rem;
+                    }
+                }
+
+                .result-box {
+                    color: $color-white;
+                    font-size: 1.6rem;
+                    font-weight: 600;
+                    letter-spacing: 0.75px;
+                    text-transform: uppercase;
+                    opacity: 0.8;
+                    display: flex;
+                    align-items: center;
+                    gap: 1rem;
+                    cursor: pointer;
+                }
+
+            }
+        }
+    }
+}
