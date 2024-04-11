@@ -26,6 +26,10 @@
             padding-bottom: 4rem;
         }
 
+        @include respond(lg) {
+            padding: 4rem 2rem;
+        }
+
 
         &::after {
             content: '';
@@ -35,6 +39,10 @@
             top: 0;
             left: -100%;
             background: $color-primary;
+
+            @include respond(lg) {
+                display: none;
+            }
         }
 
         &::before {
@@ -46,6 +54,10 @@
             left: 0;
             z-index: -1;
             background: $color-primary;
+
+            @include respond(lg) {
+                display: none;
+            }
         }
 
     }
@@ -58,6 +70,11 @@
         line-height: 8rem;
         letter-spacing: 2.367px;
         text-transform: uppercase;
+
+        @include respond(lg) {
+            font-size: 6.4rem;
+            line-height: 6.4rem;
+        }
 
 
         span {

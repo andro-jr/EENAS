@@ -5,6 +5,24 @@ $(".product-carousel").owlCarousel({
     nav: false,
     items: 3,
     margin: 20,
+    responsive: {
+        0: {
+            items: 1,
+            autoplay: true,
+            autoplayTimeout: 5000,
+            smartSpeed: 700,
+        },
+        600: {
+            items: 2,
+            autoplay: true,
+            autoplayTimeout: 5000,
+            smartSpeed: 700,
+        },
+        1200: {
+            items: 3,
+        },
+
+    },
 
     onChanged: function (event) {
         const parent = event.target.closest('.carousel-container');

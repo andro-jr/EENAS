@@ -1,8 +1,14 @@
 #home-brands {
     margin-bottom: 4rem;
     margin-top: -12rem;
+    overflow: hidden;
 
     .brand-row {
+
+        @include respond(lg) {
+            flex-wrap: wrap-reverse;
+        }
+
         .brand-box {
             aspect-ratio: 0.78;
             position: relative;
@@ -61,8 +67,16 @@
             position: relative;
             z-index: -1;
 
+            @include respond(lg) {
+                z-index: 1;
+            }
+
             .info-box {
                 padding-top: 12rem;
+
+                @include respond(lg) {
+                    padding-top: 4rem;
+                }
             }
 
             &::after {
@@ -75,6 +89,10 @@
 
                 @include respond(ml) {
                     content: '';
+                }
+
+                @include respond(lg) {
+                    display: none;
                 }
             }
         }

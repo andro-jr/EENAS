@@ -11,6 +11,10 @@
         font-size: 6.4rem;
 
     }
+
+    @include respond(lg) {
+        font-size: 4.8rem;
+    }
 }
 
 .primary-p {
@@ -32,6 +36,11 @@
     border-left: 3px solid $color-complementary;
     padding: 3.2rem;
     margin-left: 6.4rem;
+
+    @include respond(lg) {
+        padding: 2rem;
+        margin-left: 4rem;
+    }
 }
 
 .bordered-text {
