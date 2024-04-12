@@ -604,6 +604,12 @@ header {
     display: flex;
     gap: 3.2rem;
     align-items: center; }
+    @media only screen and (max-width: 768px) {
+      header .header-actions {
+        gap: 2rem; } }
+    @media only screen and (max-width: 768px) {
+      header .header-actions .header-action img {
+        width: 2.4rem; } }
     header .header-actions #navHam {
       cursor: pointer; }
   header .navigation-container {
@@ -719,6 +725,9 @@ header {
   @media only screen and (max-width: 768px) {
     .secondary-hero {
       height: 40vh; } }
+  @media only screen and (max-width: 768px) {
+    .secondary-hero {
+      border-bottom-right-radius: 10rem; } }
   .secondary-hero .secondary-hero-title {
     font-family: "Barlow", sans-serif;
     color: #FAFAFA;
@@ -794,6 +803,9 @@ footer {
 
 .socials-container {
   color: #FAFAFA; }
+  @media only screen and (max-width: 768px) {
+    .socials-container {
+      padding-block: 4rem; } }
   .socials-container .social-icons {
     display: flex;
     gap: 4rem; }
@@ -1015,6 +1027,9 @@ footer {
   background: #063034;
   position: relative;
   margin-right: 8rem; }
+  @media only screen and (max-width: 992px) {
+    #contact-details .contact-box {
+      margin-right: 0; } }
   #contact-details .contact-box::after {
     content: '';
     position: absolute;
@@ -1026,6 +1041,15 @@ footer {
     margin-right: -8rem;
     position: relative;
     z-index: 2; }
+    @media only screen and (max-width: 992px) {
+      #contact-details .contact-box .site-map {
+        margin-right: 0;
+        padding: 6.4rem;
+        padding-top: 0;
+        aspect-ratio: 1; } }
+    @media only screen and (max-width: 576px) {
+      #contact-details .contact-box .site-map {
+        padding: 3.2rem; } }
     #contact-details .contact-box .site-map iframe {
       box-shadow: 6px 8px 9px 0px rgba(0, 0, 0, 0.14);
       height: 100%;
@@ -1034,6 +1058,9 @@ footer {
     padding: 6.4rem;
     position: relative;
     z-index: 2; }
+    @media only screen and (max-width: 576px) {
+      #contact-details .contact-box .contact-details {
+        padding: 3.2rem; } }
     #contact-details .contact-box .contact-details .contact-head {
       color: #FAFAFA;
       font-family: "Barlow", sans-serif;
@@ -1041,6 +1068,9 @@ footer {
       font-style: italic;
       font-weight: 800;
       letter-spacing: 1.92px; }
+      @media only screen and (max-width: 576px) {
+        #contact-details .contact-box .contact-details .contact-head {
+          font-size: 4rem; } }
       #contact-details .contact-box .contact-details .contact-head span {
         display: inline-block;
         width: 100%; }

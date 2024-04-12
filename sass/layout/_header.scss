@@ -30,6 +30,18 @@ header {
         gap: 3.2rem;
         align-items: center;
 
+        @include respond(md) {
+            gap: 2rem;
+        }
+
+        .header-action {
+            img {
+                @include respond(md) {
+                    width: 2.4rem;
+                }
+            }
+        }
+
         #navHam {
             cursor: pointer;
         }

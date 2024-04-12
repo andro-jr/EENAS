@@ -66,6 +66,11 @@
 
     border-bottom-right-radius: 18rem;
 
+    @include respond(md) {
+        border-bottom-right-radius: 10rem;
+
+    }
+
     .secondary-hero-title {
         font-family: "Barlow", sans-serif;
         color: $color-white;

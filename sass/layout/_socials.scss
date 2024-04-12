@@ -1,6 +1,10 @@
 .socials-container {
     color: $color-white;
 
+    @include respond(md) {
+        padding-block: 4rem;
+    }
+
     .social-icons {
         display: flex;
         gap: 4rem;

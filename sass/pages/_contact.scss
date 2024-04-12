@@ -5,6 +5,10 @@
         position: relative;
         margin-right: 8rem;
 
+        @include respond(lg) {
+            margin-right: 0;
+        }
+
         &::after {
             content: '';
             position: absolute;
@@ -19,6 +23,18 @@
             position: relative;
             z-index: 2;
 
+
+            @include respond(lg) {
+                margin-right: 0;
+                padding: 6.4rem;
+                padding-top: 0;
+                aspect-ratio: 1;
+            }
+
+            @include respond(sm) {
+                padding: 3.2rem;
+            }
+
             iframe {
                 box-shadow: 6px 8px 9px 0px rgba(0, 0, 0, 0.14);
                 height: 100%;
@@ -31,6 +47,10 @@
             position: relative;
             z-index: 2;
 
+            @include respond(sm) {
+                padding: 3.2rem;
+            }
+
             .contact-head {
                 color: $color-white;
                 font-family: "Barlow", sans-serif;
@@ -38,6 +58,10 @@
                 font-style: italic;
                 font-weight: 800;
                 letter-spacing: 1.92px;
+
+                @include respond(sm) {
+                    font-size: 4rem;
+                }
 
                 span {
                     display: inline-block;
