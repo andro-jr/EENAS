@@ -1,17 +1,42 @@
 .about-p {
     width: 90%;
     margin-left: auto;
+
+    @include respond(lg) {
+        width: 100%;
+    }
+}
+
+.about-img-box {
+    @include respond(lg) {
+        margin-top: 2rem;
+    }
 }
 
 .brands-container {
     .brands-row {
         display: flex;
 
+        @include respond(lg) {
+            flex-direction: column;
+        }
+
+        &.brands-row-reverse {
+
+            @include respond(lg) {
+                flex-direction: column-reverse;
+            }
+        }
+
         .brands-col {
             flex-basis: 50%;
 
             &.brand-image-col {
                 position: relative;
+
+                @include respond(lg) {
+                    aspect-ratio: 1;
+                }
 
                 img {
                     width: 100%;
@@ -27,6 +52,16 @@
                 background: $color-secodary-dark;
                 position: relative;
 
+                @include respond(xl) {
+                    padding: 8rem;
+                }
+
+                @include respond(md) {
+                    padding: 4rem 2rem;
+                }
+
+
+
                 .brand-info {
                     color: $color-white;
                     font-size: 2.4rem;
@@ -35,6 +70,12 @@
                     line-height: 3.6rem;
                     /* 141.667% */
                     letter-spacing: 0.724px;
+
+
+                    @include respond(md) {
+                        font-size: 1.8rem;
+                        line-height: 1.4;
+                    }
                 }
 
                 &::after {
@@ -73,11 +114,19 @@
         position: relative;
         cursor: pointer;
 
+        @include respond(lg) {
+            overflow: visible;
+        }
+
         img {
             width: 100%;
             height: 100%;
             object-fit: cover;
             object-position: top;
+
+            @include respond(lg) {
+                border-radius: 4rem;
+            }
         }
 
         &::after {
@@ -87,6 +136,10 @@
             background: linear-gradient(0deg, rgba(0, 153, 255, 0.70) 0%, rgba(0, 153, 255, 0.70) 100%), url(<path-to-image>) lightgray 50% / cover no-repeat;
             opacity: 0;
             transition: all 0.3s ease-out;
+
+            @include respond(lg) {
+                display: none;
+            }
         }
 
 
@@ -100,6 +153,12 @@
             transition: all 0.3s ease-out;
             bottom: -2rem;
             opacity: 0;
+
+            @include respond(lg) {
+                position: static;
+                color: $color-medium-black;
+                opacity: 1;
+            }
 
             .team-name {
                 font-size: 2.8rem;

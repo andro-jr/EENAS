@@ -191,6 +191,10 @@ input[type=number] {
   line-height: normal;
   letter-spacing: 1.44px;
   text-transform: uppercase; }
+  @media only screen and (max-width: 768px) {
+    .tertiary-heading {
+      font-size: 3.2rem;
+      line-height: 1.4; } }
 
 .heading-support {
   color: #737373;
@@ -201,6 +205,11 @@ input[type=number] {
   letter-spacing: 0.66px;
   display: inline-block;
   width: 50%; }
+  @media only screen and (max-width: 768px) {
+    .heading-support {
+      width: 100%;
+      font-size: 2rem;
+      line-height: 1.4; } }
 
 .outlined-head {
   color: #262626;
@@ -707,6 +716,9 @@ header {
   background-position: top;
   position: relative;
   border-bottom-right-radius: 18rem; }
+  @media only screen and (max-width: 768px) {
+    .secondary-hero {
+      height: 40vh; } }
   .secondary-hero .secondary-hero-title {
     font-family: "Barlow", sans-serif;
     color: #FAFAFA;
@@ -717,6 +729,9 @@ header {
     letter-spacing: 3px;
     position: absolute;
     bottom: 4rem; }
+    @media only screen and (max-width: 992px) {
+      .secondary-hero .secondary-hero-title {
+        font-size: 6.4rem; } }
 
 footer {
   position: relative;
@@ -868,13 +883,29 @@ footer {
 .about-p {
   width: 90%;
   margin-left: auto; }
+  @media only screen and (max-width: 992px) {
+    .about-p {
+      width: 100%; } }
+
+@media only screen and (max-width: 992px) {
+  .about-img-box {
+    margin-top: 2rem; } }
 
 .brands-container .brands-row {
   display: flex; }
+  @media only screen and (max-width: 992px) {
+    .brands-container .brands-row {
+      flex-direction: column; } }
+  @media only screen and (max-width: 992px) {
+    .brands-container .brands-row.brands-row-reverse {
+      flex-direction: column-reverse; } }
   .brands-container .brands-row .brands-col {
     flex-basis: 50%; }
     .brands-container .brands-row .brands-col.brand-image-col {
       position: relative; }
+      @media only screen and (max-width: 992px) {
+        .brands-container .brands-row .brands-col.brand-image-col {
+          aspect-ratio: 1; } }
       .brands-container .brands-row .brands-col.brand-image-col img {
         width: 100%;
         height: 100%;
@@ -884,6 +915,12 @@ footer {
       padding: 12rem 10rem;
       background: #063034;
       position: relative; }
+      @media only screen and (max-width: 1200px) {
+        .brands-container .brands-row .brands-col.brand-text-col {
+          padding: 8rem; } }
+      @media only screen and (max-width: 768px) {
+        .brands-container .brands-row .brands-col.brand-text-col {
+          padding: 4rem 2rem; } }
       .brands-container .brands-row .brands-col.brand-text-col .brand-info {
         color: #FAFAFA;
         font-size: 2.4rem;
@@ -892,6 +929,10 @@ footer {
         line-height: 3.6rem;
         /* 141.667% */
         letter-spacing: 0.724px; }
+        @media only screen and (max-width: 768px) {
+          .brands-container .brands-row .brands-col.brand-text-col .brand-info {
+            font-size: 1.8rem;
+            line-height: 1.4; } }
       .brands-container .brands-row .brands-col.brand-text-col::after {
         content: attr(data-content);
         -webkit-text-fill-color: rgba(235, 0, 0, 0);
@@ -916,11 +957,17 @@ footer {
   overflow: hidden;
   position: relative;
   cursor: pointer; }
+  @media only screen and (max-width: 992px) {
+    .team-container .team-card {
+      overflow: visible; } }
   .team-container .team-card img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: top; }
+    @media only screen and (max-width: 992px) {
+      .team-container .team-card img {
+        border-radius: 4rem; } }
   .team-container .team-card::after {
     content: '';
     position: absolute;
@@ -928,6 +975,9 @@ footer {
     background: linear-gradient(0deg, rgba(0, 153, 255, 0.7) 0%, rgba(0, 153, 255, 0.7) 100%), url(<path-to-image>) lightgray 50%/cover no-repeat;
     opacity: 0;
     transition: all 0.3s ease-out; }
+    @media only screen and (max-width: 992px) {
+      .team-container .team-card::after {
+        display: none; } }
   .team-container .team-card .team-detail {
     position: absolute;
     z-index: 2;
@@ -938,6 +988,11 @@ footer {
     transition: all 0.3s ease-out;
     bottom: -2rem;
     opacity: 0; }
+    @media only screen and (max-width: 992px) {
+      .team-container .team-card .team-detail {
+        position: static;
+        color: #171717;
+        opacity: 1; } }
     .team-container .team-card .team-detail .team-name {
       font-size: 2.8rem;
       font-style: normal;

@@ -145,6 +145,11 @@
     line-height: normal;
     letter-spacing: 1.44px;
     text-transform: uppercase;
+
+    @include respond(md) {
+        font-size: 3.2rem;
+        line-height: 1.4;
+    }
 }
 
 .heading-support {
@@ -156,6 +161,12 @@
     letter-spacing: 0.66px;
     display: inline-block;
     width: 50%;
+
+    @include respond(md) {
+        width: 100%;
+        font-size: 2rem;
+        line-height: 1.4;
+    }
 }
 
 .outlined-head {

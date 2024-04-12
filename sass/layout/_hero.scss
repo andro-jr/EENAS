@@ -60,6 +60,10 @@
     background-position: top;
     position: relative;
 
+    @include respond(md) {
+        height: 40vh;
+    }
+
     border-bottom-right-radius: 18rem;
 
     .secondary-hero-title {
@@ -73,5 +77,10 @@
 
         position: absolute;
         bottom: 4rem;
+
+        @include respond(lg) {
+            font-size: 6.4rem;
+        }
+
     }
 }
