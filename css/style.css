@@ -744,7 +744,9 @@ header {
 
 footer {
   position: relative;
-  z-index: 1; }
+  z-index: 1;
+  position: relative;
+  margin-top: 16rem; }
   footer .footer-container .footer-row .footer-box {
     color: #FAFAFA;
     font-size: 1.4rem;
@@ -763,6 +765,9 @@ footer {
       border-right: 1px solid rgba(212, 212, 212, 0.2);
       padding-right: 8rem;
       margin-right: 8rem; }
+      @media only screen and (max-width: 992px) {
+        footer .footer-container .footer-row .footer-box.footer-company-info {
+          border-right: none; } }
     footer .footer-container .footer-row .footer-box .footer-head {
       color: #FAFAFA;
       font-size: 2.2rem;
@@ -800,6 +805,19 @@ footer {
     right: 0;
     opacity: 0.2;
     z-index: -1; }
+  footer::after {
+    content: '';
+    position: absolute;
+    bottom: 99%;
+    width: 100%;
+    height: 8rem;
+    background: url("../../assets/img/footer-divider.svg");
+    background-size: cover;
+    background-repeat: no-repeat; }
+  footer.socials-footer {
+    margin-top: 0; }
+    footer.socials-footer::after {
+      display: none; }
 
 .socials-container {
   color: #FAFAFA; }
@@ -825,7 +843,11 @@ footer {
       flex-wrap: wrap-reverse; } }
   #home-brands .brand-row .brand-box {
     aspect-ratio: 0.78;
-    position: relative; }
+    position: relative;
+    height: 100%; }
+    @media only screen and (max-width: 1200px) {
+      #home-brands .brand-row .brand-box {
+        aspect-ratio: none; } }
     #home-brands .brand-row .brand-box .brand-img {
       position: absolute;
       width: 100%;
@@ -848,6 +870,9 @@ footer {
         letter-spacing: 0.54px;
         text-transform: lowercase;
         position: relative; }
+        @media only screen and (max-width: 1200px) {
+          #home-brands .brand-row .brand-box .brand-text span {
+            font-size: 1.6rem; } }
         #home-brands .brand-row .brand-box .brand-text span::after {
           content: '';
           position: absolute;
@@ -862,6 +887,9 @@ footer {
         letter-spacing: 1.44px;
         text-transform: uppercase;
         font-weight: 300; }
+        @media only screen and (max-width: 1200px) {
+          #home-brands .brand-row .brand-box .brand-text h3 {
+            font-size: 3.2rem; } }
   #home-brands .brand-row .brands-info-box {
     height: 100%;
     position: relative;
@@ -1194,6 +1222,10 @@ footer {
     /* 118.077% */
     letter-spacing: 0.52px;
     margin-bottom: 1.6rem; }
+    @media only screen and (max-width: 768px) {
+      .event-detail-box .event-title {
+        font-size: 3.2rem;
+        line-height: 1.4; } }
   .event-detail-box .event-date {
     display: flex;
     gap: 1rem;
