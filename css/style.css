@@ -667,9 +667,6 @@ header {
           @media only screen and (max-width: 1400px) {
             header .navigation-container .navigation-box nav a {
               font-size: 3.2rem; } }
-          @media only screen and (max-width: 992px) {
-            header .navigation-container .navigation-box nav a {
-              font-size: 2.4rem; } }
           header .navigation-container .navigation-box nav a:hover {
             -webkit-text-fill-color: rgba(255, 255, 255, 0);
             -webkit-text-stroke: 2px white; }
@@ -818,6 +815,15 @@ footer {
     margin-top: 0; }
     footer.socials-footer::after {
       display: none; }
+  footer .copyright-text {
+    color: var(--white, #FAFAFA);
+    font-family: Barlow;
+    font-size: 13.173px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: 0.395px;
+    margin-top: 2rem; }
 
 .socials-container {
   color: #FAFAFA; }

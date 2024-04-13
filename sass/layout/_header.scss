@@ -124,9 +124,7 @@ header {
                         font-size: 3.2rem;
                     }
 
-                    @include respond(lg) {
-                        font-size: 2.4rem;
-                    }
+
 
                     &:hover {
                         -webkit-text-fill-color: rgba(255, 255, 255, 0);
