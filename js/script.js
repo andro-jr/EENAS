@@ -49,7 +49,42 @@ $(".product-carousel").owlCarousel({
     }
 });
 
+// Custom navigation action
+$(document).ready(function () {
+    $('.navigation-prev').click(function () {
+        var parentCarousel = $(this).closest('.carousel-container');
+        var owl = parentCarousel.find('.owl-carousel');
+        owl.owlCarousel();
+        owl.trigger('prev.owl.carousel');
+    });
+});
 
+$(document).ready(function () {
+    $('.navigation-next').click(function () {
+        var parentCarousel = $(this).closest('.carousel-container');
+        var owl = parentCarousel.find('.owl-carousel');
+        owl.owlCarousel();
+        owl.trigger('next.owl.carousel');
+    });
+});
+
+// Lightbox
+$(document).ready(function () {
+    $(".popup-gallery").magnificPopup({
+        delegate: "a",
+        type: "image",
+        tLoading: "Loading image #%curr%...",
+        mainClass: "mfp-img-mobile",
+        gallery: {
+            enabled: true,
+            navigateByImgClick: true,
+            preload: [0, 1], // Will preload 0 - before current, and 1 after the current image
+        },
+        image: {
+            tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
+        },
+    });
+});
 
 
 
@@ -68,22 +103,3 @@ navClose.addEventListener('click', () => {
     navContainer.classList.remove('show-nav')
 
 })
-
-// Lightbox
-
-$(document).ready(function () {
-    $(".popup-gallery").magnificPopup({
-        delegate: "a",
-        type: "image",
-        tLoading: "Loading image #%curr%...",
-        mainClass: "mfp-img-mobile",
-        gallery: {
-            enabled: true,
-            navigateByImgClick: true,
-            preload: [0, 1], // Will preload 0 - before current, and 1 after the current image
-        },
-        image: {
-            tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
-        },
-    });
-});

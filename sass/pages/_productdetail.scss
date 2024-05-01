@@ -7,6 +7,10 @@
             letter-spacing: 1.08px;
             text-transform: uppercase;
             display: inline-block;
+
+            @include respond(md) {
+                font-size: 1.4rem;
+            }
         }
 
         .product-title {
@@ -15,6 +19,10 @@
             font-weight: 600;
             letter-spacing: 2.88px;
             text-transform: uppercase;
+
+            @include respond(md) {
+                font-size: 3.2rem;
+            }
         }
 
         .product-details {
@@ -30,6 +38,11 @@
             .details-row {
                 margin-bottom: 1.4rem;
 
+                @include respond(md) {
+                    display: flex;
+                    flex-direction: column;
+                }
+
                 .detail-head {
                     color: $color-light-black;
                     font-size: 1.8rem;
@@ -37,6 +50,10 @@
                     letter-spacing: 1.08px;
                     min-width: 30rem;
                     display: inline-block;
+
+                    @include respond(md) {
+                        min-width: 20rem;
+                    }
                 }
 
                 .detail-value {
@@ -44,6 +61,10 @@
                     font-size: 18px;
                     font-weight: 600;
                     letter-spacing: 1.08px;
+
+                    @include respond(md) {
+                        font-size: 1.4rem;
+                    }
                 }
             }
         }

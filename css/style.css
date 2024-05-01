@@ -66,6 +66,10 @@ input::-webkit-inner-spin-button {
 input[type=number] {
   -moz-appearance: textfield; }
 
+@media only screen and (max-width: 576px) {
+  .container {
+    padding-inline: 2rem; } }
+
 @media screen and (min-width: 1600px) {
   .container {
     max-width: 1540px; } }
@@ -1184,6 +1188,9 @@ footer {
   letter-spacing: 1.08px;
   text-transform: uppercase;
   display: inline-block; }
+  @media only screen and (max-width: 768px) {
+    #prodetail-details .product-details .product-category {
+      font-size: 1.4rem; } }
 
 #prodetail-details .product-details .product-title {
   color: #0A0A0A;
@@ -1191,6 +1198,9 @@ footer {
   font-weight: 600;
   letter-spacing: 2.88px;
   text-transform: uppercase; }
+  @media only screen and (max-width: 768px) {
+    #prodetail-details .product-details .product-title {
+      font-size: 3.2rem; } }
 
 #prodetail-details .product-details .product-details .details-title {
   color: #737373;
@@ -1202,6 +1212,10 @@ footer {
 
 #prodetail-details .product-details .product-details .details-row {
   margin-bottom: 1.4rem; }
+  @media only screen and (max-width: 768px) {
+    #prodetail-details .product-details .product-details .details-row {
+      display: flex;
+      flex-direction: column; } }
   #prodetail-details .product-details .product-details .details-row .detail-head {
     color: #262626;
     font-size: 1.8rem;
@@ -1209,11 +1223,17 @@ footer {
     letter-spacing: 1.08px;
     min-width: 30rem;
     display: inline-block; }
+    @media only screen and (max-width: 768px) {
+      #prodetail-details .product-details .product-details .details-row .detail-head {
+        min-width: 20rem; } }
   #prodetail-details .product-details .product-details .details-row .detail-value {
     color: #525252;
     font-size: 18px;
     font-weight: 600;
     letter-spacing: 1.08px; }
+    @media only screen and (max-width: 768px) {
+      #prodetail-details .product-details .product-details .details-row .detail-value {
+        font-size: 1.4rem; } }
 
 .event-detail-box {
   max-width: 80rem;
