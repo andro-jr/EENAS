@@ -18,16 +18,17 @@
     &.product-info-box {
         padding-left: 0;
         position: relative;
-        justify-content: end;
+        justify-content: center;
 
-        padding-bottom: 6.4rem;
+        padding-top: 6.4rem;
 
         @include respond(ml) {
             padding-bottom: 4rem;
+            padding-top: 4rem;
         }
 
         @include respond(lg) {
-            padding: 4rem 2rem;
+            padding-inline: 2rem;
         }
 
 
