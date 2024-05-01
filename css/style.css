@@ -543,14 +543,13 @@ input[type=number] {
     padding-left: 0;
     position: relative;
     justify-content: center;
-    padding-top: 6.4rem; }
+    padding-top: 10rem; }
     @media only screen and (max-width: 1600px) {
       .info-box.product-info-box {
-        padding-bottom: 4rem;
-        padding-top: 4rem; } }
+        padding-bottom: 4rem; } }
     @media only screen and (max-width: 992px) {
       .info-box.product-info-box {
-        padding-inline: 2rem; } }
+        padding: 4rem 2rem; } }
     .info-box.product-info-box::after {
       content: '';
       position: absolute;

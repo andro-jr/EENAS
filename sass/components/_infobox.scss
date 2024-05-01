@@ -20,16 +20,17 @@
         position: relative;
         justify-content: center;
 
-        padding-top: 6.4rem;
+        padding-top: 10rem;
 
         @include respond(ml) {
             padding-bottom: 4rem;
-            padding-top: 4rem;
         }
 
         @include respond(lg) {
-            padding-inline: 2rem;
+            padding: 4rem 2rem;
         }
+
+
 
 
         &::after {
