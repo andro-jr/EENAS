@@ -1,53 +1,56 @@
 'use strict'
 
-$(".product-carousel").owlCarousel({
-    loop: false,
-    nav: false,
-    items: 3,
-    margin: 20,
-    responsive: {
-        0: {
-            items: 1,
-            autoplay: true,
-            autoplayTimeout: 5000,
-            smartSpeed: 700,
+$(document).ready(function () {
+    $(".product-carousel").owlCarousel({
+        loop: false,
+        nav: false,
+        items: 3,
+        margin: 20,
+        responsive: {
+            0: {
+                items: 1,
+                autoplay: true,
+                autoplayTimeout: 5000,
+                smartSpeed: 700,
+            },
+            600: {
+                items: 2,
+                autoplay: true,
+                autoplayTimeout: 5000,
+                smartSpeed: 700,
+            },
+            1200: {
+                items: 3,
+            },
+
         },
-        600: {
-            items: 2,
-            autoplay: true,
-            autoplayTimeout: 5000,
-            smartSpeed: 700,
-        },
-        1200: {
-            items: 3,
-        },
 
-    },
+        onChanged: function (event) {
+            const parent = event.target.closest('.carousel-container');
 
-    onChanged: function (event) {
-        const parent = event.target.closest('.carousel-container');
+            if (!parent) return
+            const customNext = parent.querySelector('.navigation-next')
+            const customPrev = parent.querySelector('.navigation-prev')
+            var carousel = event.relatedTarget;
+            var hasNext = carousel.relative(carousel.current()) < carousel.maximum();
+            var hasPrev = carousel.relative(carousel.current()) > 0;
 
-        if (!parent) return
-        const customNext = parent.querySelector('.navigation-next')
-        const customPrev = parent.querySelector('.navigation-prev')
-        var carousel = event.relatedTarget;
-        var hasNext = carousel.relative(carousel.current()) < carousel.maximum();
-        var hasPrev = carousel.relative(carousel.current()) > 0;
+            if (hasNext) {
+                customNext.classList.remove('disabled') // Enable the next button
+            } else {
+                customNext.classList.add('disabled') // Disable the next button
+            }
 
-        if (hasNext) {
-            customNext.classList.remove('disabled') // Enable the next button
-        } else {
-            customNext.classList.add('disabled') // Disable the next button
+            if (hasPrev) {
+                customPrev.classList.remove('disabled') // Enable the next button
+            } else {
+                customPrev.classList.add('disabled') // Disable the next button
+            }
+
         }
+    });
+})
 
-        if (hasPrev) {
-            customPrev.classList.remove('disabled') // Enable the next button
-        } else {
-            customPrev.classList.add('disabled') // Disable the next button
-        }
-
-    }
-});
 
 // Custom navigation action
 $(document).ready(function () {
@@ -102,4 +105,4 @@ navClose.addEventListener('click', () => {
     navContainer.classList.add('hide-nav')
     navContainer.classList.remove('show-nav')
 
-})
+});

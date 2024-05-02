@@ -291,6 +291,12 @@ input[type=number] {
 .text-italic {
   font-style: italic; }
 
+.animate-section {
+  transition: transform 1s, opacity 1s; }
+
+.section--hidden {
+  transform: translateY(8rem); }
+
 .mb-8 {
   margin-bottom: 0.8rem; }
 
