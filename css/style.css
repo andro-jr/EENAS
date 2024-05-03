@@ -266,8 +266,9 @@ input[type=number] {
   .shape-container .rectangle-small-bottom {
     position: absolute;
     width: 70%;
-    height: 6rem;
-    top: 100%; }
+    height: calc(6rem + 1px);
+    top: 100%;
+    margin-top: -1px; }
     @media only screen and (max-width: 992px) {
       .shape-container .rectangle-small-bottom {
         display: none; } }
