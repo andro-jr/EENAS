@@ -28,8 +28,9 @@
     .rectangle-small-bottom {
         position: absolute;
         width: 70%;
-        height: 6rem;
+        height: calc(6rem + 1px);
         top: 100%;
+        margin-top: -1px;
 
         @include respond(lg) {
             display: none;
