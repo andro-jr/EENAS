@@ -106,3 +106,19 @@ navClose.addEventListener('click', () => {
     navContainer.classList.remove('show-nav')
 
 });
+
+
+const searchIcon = document.querySelector('.search-icon');
+const searchBox = document.querySelector('.search-box');
+
+searchIcon.addEventListener('click', () => {
+    searchBox.classList.toggle('visible')
+})
+
+document.addEventListener('click', (e) => {
+    if (searchBox && searchIcon) {
+        if (searchBox.classList.contains('visible') && !e.target.closest('.search-box') && !e.target.classList.contains('search-icon')) {
+            searchBox.classList.toggle('visible')
+        }
+    }
+})

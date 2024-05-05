@@ -32,6 +32,10 @@
     list-style: none;
     margin-bottom: 0.5rem;
 
+    .category-title {
+        margin-bottom: 0;
+    }
+
     label {
         display: flex;
         gap: 10px;

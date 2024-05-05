@@ -464,6 +464,8 @@ input[type=number] {
   padding: 0;
   list-style: none;
   margin-bottom: 0.5rem; }
+  .custom-checkbox .category-title {
+    margin-bottom: 0; }
   .custom-checkbox label {
     display: flex;
     gap: 10px;
@@ -593,6 +595,55 @@ input[type=number] {
         line-height: 6.4rem; } }
     .info-box .info-head span {
       font-style: italic; }
+
+.search-container {
+  position: relative; }
+  .search-container .search-box {
+    position: absolute;
+    top: 150%;
+    background: #FAFAFA;
+    padding: 1rem;
+    padding-left: 2rem;
+    border-radius: 10px;
+    right: 0;
+    width: 30rem;
+    display: flex;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(100%);
+    transition: all 0.3s; }
+    .search-container .search-box.visible {
+      opacity: 1;
+      visibility: visible;
+      transform: translateX(0); }
+    .search-container .search-box input {
+      border: none;
+      width: 100%;
+      padding: 1rem 0;
+      font-size: 1.4rem;
+      line-height: 1.5;
+      letter-spacing: 1px;
+      color: #262626;
+      outline: none;
+      background: transparent; }
+      .search-container .search-box input::placeholder {
+        font-size: 1.4rem;
+        line-height: 1.5;
+        letter-spacing: 1px;
+        color: #D4D4D4; }
+    .search-container .search-box button {
+      outline: none;
+      border: none;
+      padding: 1rem 2rem;
+      background: #0E54A4;
+      font-size: 1.4rem;
+      color: #FAFAFA;
+      border-radius: 10px;
+      letter-spacing: 1px;
+      font-weight: 500; }
+
+.search-icon {
+  cursor: pointer; }
 
 header {
   position: absolute;
