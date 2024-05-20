@@ -76,6 +76,7 @@ header {
         .navigation-box {
             background: $color-secodary-dark;
             height: 100%;
+            overflow-y: auto;
             width: 60rem;
             position: relative;
             padding: 4.8rem;
@@ -83,10 +84,17 @@ header {
             flex-direction: column;
             justify-content: space-between;
 
+            /* width */
+            &::-webkit-scrollbar {
+                display: none;
+            }
+
+
             .nav-socials {
                 display: flex;
                 gap: 2rem;
                 align-items: baseline;
+                margin-top: 4rem;
 
                 .nav-social {
                     color: $color-white;

@@ -74,6 +74,23 @@ input[type=number] {
   .container {
     max-width: 1540px; } }
 
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+  cursor: pointer; }
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; }
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #0E54A4; }
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #0E54A4; }
+
 .hero-heading {
   color: #FFF;
   font-family: "Barlow", sans-serif;
@@ -692,16 +709,21 @@ header {
     header .navigation-container .navigation-box {
       background: #063034;
       height: 100%;
+      overflow-y: auto;
       width: 60rem;
       position: relative;
       padding: 4.8rem;
       display: flex;
       flex-direction: column;
-      justify-content: space-between; }
+      justify-content: space-between;
+      /* width */ }
+      header .navigation-container .navigation-box::-webkit-scrollbar {
+        display: none; }
       header .navigation-container .navigation-box .nav-socials {
         display: flex;
         gap: 2rem;
-        align-items: baseline; }
+        align-items: baseline;
+        margin-top: 4rem; }
         header .navigation-container .navigation-box .nav-socials .nav-social {
           color: #FAFAFA;
           font-size: 3.2rem;
