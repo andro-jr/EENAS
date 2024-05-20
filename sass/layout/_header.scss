@@ -74,7 +74,7 @@ header {
         }
 
         .navigation-box {
-            background: $color-primary;
+            background: $color-secodary-dark;
             height: 100%;
             width: 60rem;
             position: relative;
@@ -107,8 +107,60 @@ header {
                 display: flex;
                 flex-direction: column;
 
+                .multi-select-box {
+                    position: relative;
 
-                a {
+                    .multi-select-items {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 0.8rem;
+                        transition: all 0.3s;
+
+                        visibility: hidden;
+                        overflow: hidden;
+                        opacity: 0;
+                        height: 0;
+                        margin: 0;
+
+                        &.show {
+                            opacity: 1;
+                            visibility: visible;
+                            height: auto;
+                            margin-top: 1rem;
+                            margin-bottom: 2rem;
+                        }
+
+                        .multi-select-item {
+                            font-size: 2rem;
+                            font-style: italic;
+                            font-weight: bold;
+                            font-family: Barlow;
+                            color: white;
+                            text-decoration: none;
+                            transition: all 0.2s;
+                        }
+
+                        .multi-select-item:hover {
+                            text-decoration: underline;
+                        }
+                    }
+                }
+
+                .multi-item-head {
+                    display: flex;
+
+                    img {
+                        width: 2rem;
+                        transition: all 0.3s;
+
+                        &.rotate {
+                            transform: rotate(-180deg);
+                        }
+                    }
+                }
+
+
+                .nav-item {
                     width: fit-content;
                     color: $color-white;
                     font-family: Barlow;
@@ -119,6 +171,7 @@ header {
                     text-decoration: none;
                     gap: 2rem;
                     transition: all 0.3s;
+                    cursor: pointer;
 
                     @include respond(xxl) {
                         font-size: 3.2rem;

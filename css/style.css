@@ -690,7 +690,7 @@ header {
       header .navigation-container.hide-nav .navigation-box {
         animation: slideOut 0.2s linear; }
     header .navigation-container .navigation-box {
-      background: #0E54A4;
+      background: #063034;
       height: 100%;
       width: 60rem;
       position: relative;
@@ -715,7 +715,42 @@ header {
       header .navigation-container .navigation-box nav {
         display: flex;
         flex-direction: column; }
-        header .navigation-container .navigation-box nav a {
+        header .navigation-container .navigation-box nav .multi-select-box {
+          position: relative; }
+          header .navigation-container .navigation-box nav .multi-select-box .multi-select-items {
+            display: flex;
+            flex-direction: column;
+            gap: 0.8rem;
+            transition: all 0.3s;
+            visibility: hidden;
+            overflow: hidden;
+            opacity: 0;
+            height: 0;
+            margin: 0; }
+            header .navigation-container .navigation-box nav .multi-select-box .multi-select-items.show {
+              opacity: 1;
+              visibility: visible;
+              height: auto;
+              margin-top: 1rem;
+              margin-bottom: 2rem; }
+            header .navigation-container .navigation-box nav .multi-select-box .multi-select-items .multi-select-item {
+              font-size: 2rem;
+              font-style: italic;
+              font-weight: bold;
+              font-family: Barlow;
+              color: white;
+              text-decoration: none;
+              transition: all 0.2s; }
+            header .navigation-container .navigation-box nav .multi-select-box .multi-select-items .multi-select-item:hover {
+              text-decoration: underline; }
+        header .navigation-container .navigation-box nav .multi-item-head {
+          display: flex; }
+          header .navigation-container .navigation-box nav .multi-item-head img {
+            width: 2rem;
+            transition: all 0.3s; }
+            header .navigation-container .navigation-box nav .multi-item-head img.rotate {
+              transform: rotate(-180deg); }
+        header .navigation-container .navigation-box nav .nav-item {
           width: fit-content;
           color: #FAFAFA;
           font-family: Barlow;
@@ -725,14 +760,15 @@ header {
           text-transform: uppercase;
           text-decoration: none;
           gap: 2rem;
-          transition: all 0.3s; }
+          transition: all 0.3s;
+          cursor: pointer; }
           @media only screen and (max-width: 1400px) {
-            header .navigation-container .navigation-box nav a {
+            header .navigation-container .navigation-box nav .nav-item {
               font-size: 3.2rem; } }
-          header .navigation-container .navigation-box nav a:hover {
+          header .navigation-container .navigation-box nav .nav-item:hover {
             -webkit-text-fill-color: rgba(255, 255, 255, 0);
             -webkit-text-stroke: 2px white; }
-          header .navigation-container .navigation-box nav a.active {
+          header .navigation-container .navigation-box nav .nav-item.active {
             -webkit-text-fill-color: rgba(255, 255, 255, 0);
             -webkit-text-stroke: 2px white;
             font-style: italic; }

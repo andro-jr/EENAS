@@ -122,3 +122,27 @@ document.addEventListener('click', (e) => {
         }
     }
 })
+
+
+// multi select
+
+const multiBox = document.querySelectorAll('.multi-select-box');
+
+if (multiBox) {
+    multiBox.forEach((multi) => {
+
+    })
+}
+
+const multiHeads = document.querySelectorAll('.multi-item-head');
+
+multiHeads.forEach((multiHead) => {
+    multiHead.addEventListener('click', () => {
+        const multiItems = multiHead.closest('.multi-select-box').querySelector('.multi-select-items');
+        multiItems.classList.toggle('show');
+
+        const multiIcon = multiHead.querySelector('img');
+        multiIcon.classList.toggle('rotate')
+    })
+})
+
