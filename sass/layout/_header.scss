@@ -120,32 +120,68 @@ header {
 
                     .multi-select-items {
                         display: flex;
-                        flex-direction: column;
                         gap: 0.8rem;
                         transition: all 0.3s;
+                        flex-wrap: wrap;
+                        gap: 2rem;
 
                         visibility: hidden;
                         overflow: hidden;
                         opacity: 0;
                         height: 0;
+                        text-align: center;
+
                         margin: 0;
 
                         &.show {
                             opacity: 1;
                             visibility: visible;
                             height: auto;
-                            margin-top: 1rem;
-                            margin-bottom: 2rem;
+                            margin-top: 2rem;
+                            margin-bottom: 4rem;
                         }
 
                         .multi-select-item {
                             font-size: 2rem;
                             font-style: italic;
+                            padding: 2rem;
                             font-weight: bold;
                             font-family: Barlow;
                             color: white;
                             text-decoration: none;
                             transition: all 0.2s;
+                            flex: 1;
+                            flex-basis: 30%;
+                            background: white;
+                            border-radius: 26px;
+                            flex-grow: 0;
+                            max-width: 30%;
+
+                            @include respond(sm) {
+                                flex-basis: 45%;
+                                max-width: 45%;
+
+                            }
+
+                            img {
+                                width: 70%;
+                                margin: auto;
+                            }
+
+                            h3 {
+                                color: black;
+                                margin-top: 1.4rem;
+                                font-size: 1.6rem;
+                                margin-bottom: 0;
+                                font-family: Barlow;
+                                font-weight: 500;
+                                letter-spacing: 1.5px;
+                                word-break: break-word;
+
+                                @include respond(sm) {
+                                    font-size: 1.2rem;
+                                }
+                            }
                         }
 
                         .multi-select-item:hover {
