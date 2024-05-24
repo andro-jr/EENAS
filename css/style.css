@@ -1299,7 +1299,7 @@ footer {
   margin-bottom: 3.2rem;
   padding-bottom: 3.2rem; }
   .filter-row .form-row:not(:last-child) {
-    border-bottom: 1px solid #737373; }
+    border-bottom: 1px solid #E5E5E5; }
 
 .filter-row .filter-head {
   color: #262626;
@@ -1324,6 +1324,50 @@ footer {
 
 .filter-row .filter-list {
   padding: 0; }
+
+.categories-col h4 {
+  display: flex;
+  gap: 1.6rem; }
+
+.categories-col .category-filter {
+  transition: all 0.3s; }
+  @media only screen and (max-width: 768px) {
+    .categories-col .category-filter {
+      visibility: hidden;
+      opacity: 0;
+      height: 0; } }
+  @media only screen and (max-width: 768px) {
+    .categories-col .category-filter.filter-show {
+      visibility: visible;
+      opacity: 1;
+      height: 100%; } }
+
+.categories-col .category-arrow {
+  display: none;
+  width: 1.6rem;
+  transition: all 0.3s; }
+  @media only screen and (max-width: 768px) {
+    .categories-col .category-arrow {
+      display: block; } }
+  .categories-col .category-arrow.rotate {
+    transform: rotate(180deg); }
+
+.filter-button {
+  color: white;
+  background: #0E54A4;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  font-size: 2.2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 123%;
+  letter-spacing: 1.5px;
+  font-family: Barlow; }
+  .filter-button img {
+    width: 2.4rem; }
 
 #prodetail-details .product-details .product-category {
   color: #737373;

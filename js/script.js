@@ -96,53 +96,72 @@ const navContainer = document.querySelector('#navContainer');
 const navBox = document.querySelector('#navContainer');
 const navClose = document.querySelector('#navClose');
 
-navHam.addEventListener('click', () => {
-    navContainer.classList.remove('hide-nav')
-    navContainer.classList.add('show-nav')
-})
+if (navHam) {
 
-navClose.addEventListener('click', () => {
-    navContainer.classList.add('hide-nav')
-    navContainer.classList.remove('show-nav')
+    navHam.addEventListener('click', () => {
+        navContainer.classList.remove('hide-nav')
+        navContainer.classList.add('show-nav')
+    })
 
-});
+    navClose.addEventListener('click', () => {
+        navContainer.classList.add('hide-nav')
+        navContainer.classList.remove('show-nav')
+
+    });
+}
+
 
 
 const searchIcon = document.querySelector('.search-icon');
 const searchBox = document.querySelector('.search-box');
 
-searchIcon.addEventListener('click', () => {
-    searchBox.classList.toggle('visible')
-})
+if (searchBox && searchIcon) {
+    searchIcon.addEventListener('click', () => {
+        searchBox.classList.toggle('visible')
+    })
 
-document.addEventListener('click', (e) => {
-    if (searchBox && searchIcon) {
-        if (searchBox.classList.contains('visible') && !e.target.closest('.search-box') && !e.target.classList.contains('search-icon')) {
-            searchBox.classList.toggle('visible')
+    document.addEventListener('click', (e) => {
+        if (searchBox && searchIcon) {
+            if (searchBox.classList.contains('visible') && !e.target.closest('.search-box') && !e.target.classList.contains('search-icon')) {
+                searchBox.classList.toggle('visible')
+            }
         }
-    }
-})
+    })
+}
+
+
 
 
 // multi select
 
 const multiBox = document.querySelectorAll('.multi-select-box');
 
-if (multiBox) {
-    multiBox.forEach((multi) => {
+const multiHeads = document.querySelectorAll('.multi-item-head');
 
+if (multiHeads) {
+    multiHeads.forEach((multiHead) => {
+        multiHead.addEventListener('click', () => {
+            const multiItems = multiHead.closest('.multi-select-box').querySelector('.multi-select-items');
+            multiItems.classList.toggle('show');
+
+            const multiIcon = multiHead.querySelector('img');
+            multiIcon.classList.toggle('rotate')
+        })
     })
 }
 
-const multiHeads = document.querySelectorAll('.multi-item-head');
 
-multiHeads.forEach((multiHead) => {
-    multiHead.addEventListener('click', () => {
-        const multiItems = multiHead.closest('.multi-select-box').querySelector('.multi-select-items');
-        multiItems.classList.toggle('show');
 
-        const multiIcon = multiHead.querySelector('img');
-        multiIcon.classList.toggle('rotate')
+// Category collapse on mobile
+const categoryHead = document.querySelector('#categoryHead');
+const categoryArrow = document.querySelector('.category-arrow')
+
+if (categoryHead && window.innerWidth < 768) {
+    const categoryFilter = document.querySelector('.category-filter');
+
+    categoryHead.addEventListener('click', () => {
+        categoryFilter.classList.toggle('filter-show');
+
+        categoryArrow.classList.toggle('rotate')
     })
-})
-
+}
