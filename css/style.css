@@ -506,6 +506,9 @@ input[type=number] {
   margin-bottom: 0.5rem; }
   .custom-checkbox .category-title {
     margin-bottom: 0; }
+    .custom-checkbox .category-title .category-title-arrow {
+      width: 2rem;
+      transition: all 0.3s; }
   .custom-checkbox label {
     display: flex;
     gap: 10px;
@@ -525,7 +528,8 @@ input[type=number] {
       border: 2px solid #0E54A4;
       display: flex;
       justify-content: center;
-      align-items: center; }
+      align-items: center;
+      display: none; }
       .custom-checkbox label .checkbox i {
         color: #FAFAFA;
         font-size: 10px; }
@@ -1367,6 +1371,11 @@ footer {
   padding-bottom: 3.2rem; }
   .filter-row .form-row:not(:last-child) {
     border-bottom: 1px solid #E5E5E5; }
+  .filter-row .form-row.show .filter-list {
+    visibility: visible;
+    max-height: 100rem; }
+  .filter-row .form-row.show .category-title-arrow {
+    transform: rotate(180deg); }
 
 .filter-row .filter-head {
   color: #262626;
@@ -1390,7 +1399,12 @@ footer {
     left: 0; }
 
 .filter-row .filter-list {
-  padding: 0; }
+  padding: 0;
+  visibility: hidden;
+  max-height: 0;
+  padding: 0;
+  transition: all 0.3s;
+  overflow: hidden; }
 
 .categories-col h4 {
   display: flex;

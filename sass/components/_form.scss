@@ -34,6 +34,11 @@
 
     .category-title {
         margin-bottom: 0;
+
+        .category-title-arrow {
+            width: 2rem;
+            transition: all 0.3s;
+        }
     }
 
     label {
@@ -57,7 +62,10 @@
             border-radius: 4px;
             border: 2px solid $color-primary;
 
+
             @include flex-center;
+
+            display: none;
 
             i {
                 color: $color-white;

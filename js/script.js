@@ -228,3 +228,15 @@ if (toggleButton) {
     }
   });
 }
+
+// sub category toggle
+
+const categoryTitle = document.querySelectorAll(".category-title");
+
+if (categoryTitle) {
+  categoryTitle.forEach((item) => {
+    item.addEventListener("click", () => {
+      item.closest(".form-row").classList.toggle("show");
+    });
+  });
+}
