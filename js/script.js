@@ -172,3 +172,59 @@ if (searchInput) {
     }, 200);
   });
 }
+
+// description toggle
+
+const description = document.getElementById("description");
+const toggleButton = document.getElementById("toggleButton");
+
+function getLineHeight(element) {
+  const computedStyle = window.getComputedStyle(element);
+  const lineHeight = computedStyle.lineHeight;
+
+  // If lineHeight is "normal", calculate it based on font size
+  if (lineHeight === "normal") {
+    const fontSize = parseFloat(computedStyle.fontSize);
+    return fontSize * 1.2; // Assuming normal line-height is roughly 1.2 times font-size
+  }
+
+  // If lineHeight is in pixels, return the value directly
+  if (lineHeight.includes("px")) {
+    return parseFloat(lineHeight);
+  }
+
+  // If lineHeight is a unitless value, multiply by the font size
+  if (!isNaN(lineHeight)) {
+    const fontSize = parseFloat(computedStyle.fontSize);
+    return parseFloat(lineHeight) * fontSize;
+  }
+
+  return parseInt(lineHeight);
+}
+
+function countLines() {
+  let divHeight = description.offsetHeight;
+
+  const lineHeight = getLineHeight(description);
+
+  let lines = divHeight / lineHeight;
+
+  if (Math.ceil(lines) > 3 && window.innerWidth <= 768) {
+    description.classList.add("hide-full");
+    toggleButton.classList.add("show");
+  }
+}
+
+if (description) countLines();
+
+if (toggleButton) {
+  toggleButton.addEventListener("click", function () {
+    if (description.classList.contains("show-full")) {
+      description.classList.remove("show-full");
+      toggleButton.textContent = "Show More";
+    } else {
+      description.classList.add("show-full");
+      toggleButton.textContent = "Show Less";
+    }
+  });
+}

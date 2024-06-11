@@ -25,7 +25,44 @@
             }
         }
 
+        @include respond(md) {
+            .primary-p {
+
+                &.hide-full {
+                    -webkit-line-clamp: 3;
+                    display: -webkit-box;
+                    -webkit-box-orient: vertical;
+                    overflow: hidden;
+                }
+
+
+
+                &.show-full {
+                    -webkit-line-clamp: unset;
+                    overflow: visible;
+                }
+            }
+
+            .toggle-button {
+                color: $color-complementary;
+                font-size: 1.4rem;
+                display: none;
+
+                &.show {
+                    display: block;
+                }
+            }
+        }
+
+        .toggle-button {
+            display: none;
+        }
+
+
+
         .product-details {
+            margin-top: 6.4rem;
+
             .details-title {
                 color: $color-gray;
                 font-size: 2.2rem;
