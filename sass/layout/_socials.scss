@@ -22,5 +22,9 @@
             aspect-ratio: 1;
             object-fit: cover;
         }
+
+        @include respond(md) {
+            display: none;
+        }
     }
 }

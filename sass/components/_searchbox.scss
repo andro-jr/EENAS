@@ -1,6 +1,10 @@
 .search-container {
     position: relative;
 
+    @include respond(md) {
+        position: static;
+    }
+
 
 
     .search-box {
@@ -14,15 +18,28 @@
         width: 30rem;
         display: flex;
 
+        @include respond(md) {
+            width: 90vw;
+            left: 50%;
+            transform: translate(-50%, 100%);
+            top: 12rem;
+        }
+
         opacity: 0;
         visibility: hidden;
-        transform: translateY(100%);
+        transform: translate(0, 100%);
         transition: all 0.3s;
+
+
 
         &.visible {
             opacity: 1;
             visibility: visible;
-            transform: translateX(0);
+            transform: translate(0);
+
+            @include respond(md) {
+                transform: translate(-50%, 0);
+            }
         }
 
         input {
@@ -43,6 +60,8 @@
             color: $color-light-black;
             outline: none;
             background: transparent;
+
+
         }
 
         button {
@@ -55,6 +74,39 @@
             border-radius: 10px;
             letter-spacing: 1px;
             font-weight: 500;
+        }
+
+        .search-suggestion {
+            display: none;
+            position: absolute;
+            top: 110%;
+            left: 0;
+            width: 100%;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            z-index: 1;
+            border-radius: 1rem;
+            overflow: hidden;
+            padding-block: 5px;
+        }
+
+        .search-suggestion a {
+            display: block;
+            padding: 1rem 1.2rem;
+            font-size: 1.6rem;
+            letter-spacing: 1.28px;
+
+            text-decoration: none;
+            color: $color-black;
+        }
+
+        .search-suggestion a:hover {
+            background-color: #f0f0f0;
+        }
+
+        .show {
+            display: block;
         }
     }
 }

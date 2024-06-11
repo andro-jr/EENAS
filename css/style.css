@@ -615,6 +615,9 @@ input[type=number] {
 
 .search-container {
   position: relative; }
+  @media only screen and (max-width: 768px) {
+    .search-container {
+      position: static; } }
   .search-container .search-box {
     position: absolute;
     top: 150%;
@@ -627,12 +630,21 @@ input[type=number] {
     display: flex;
     opacity: 0;
     visibility: hidden;
-    transform: translateY(100%);
+    transform: translate(0, 100%);
     transition: all 0.3s; }
+    @media only screen and (max-width: 768px) {
+      .search-container .search-box {
+        width: 90vw;
+        left: 50%;
+        transform: translate(-50%, 100%);
+        top: 12rem; } }
     .search-container .search-box.visible {
       opacity: 1;
       visibility: visible;
-      transform: translateX(0); }
+      transform: translate(0); }
+      @media only screen and (max-width: 768px) {
+        .search-container .search-box.visible {
+          transform: translate(-50%, 0); } }
     .search-container .search-box input {
       border: none;
       width: 100%;
@@ -658,6 +670,30 @@ input[type=number] {
       border-radius: 10px;
       letter-spacing: 1px;
       font-weight: 500; }
+    .search-container .search-box .search-suggestion {
+      display: none;
+      position: absolute;
+      top: 110%;
+      left: 0;
+      width: 100%;
+      background-color: #fff;
+      border: 1px solid #ccc;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      z-index: 1;
+      border-radius: 1rem;
+      overflow: hidden;
+      padding-block: 5px; }
+    .search-container .search-box .search-suggestion a {
+      display: block;
+      padding: 1rem 1.2rem;
+      font-size: 1.6rem;
+      letter-spacing: 1.28px;
+      text-decoration: none;
+      color: #0A0A0A; }
+    .search-container .search-box .search-suggestion a:hover {
+      background-color: #f0f0f0; }
+    .search-container .search-box .show {
+      display: block; }
 
 .search-icon {
   cursor: pointer; }
@@ -992,6 +1028,9 @@ footer {
     width: 100%;
     aspect-ratio: 1;
     object-fit: cover; }
+  @media only screen and (max-width: 768px) {
+    .socials-container .social-gallery {
+      display: none; } }
 
 #home-brands {
   margin-bottom: 4rem;
