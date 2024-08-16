@@ -40,12 +40,79 @@
             <img src="./assets/img/logo.png" alt="" />
           </a>
           <div class="header-actions">
-            <div class="header-action">
-              <img src="./assets/icons/search.svg" alt="" />
+            <div class="header-action search-container">
+              <img src="./assets/icons/search.svg" alt="" class="search-icon" />
+              <div class="search-box">
+                <input
+                  type="text"
+                  placeholder="Enter your keyword"
+                  id="searchInput"
+                />
+                <button>Search</button>
+                <div class="search-suggestion" id="searchSuggestion">
+                  <a href="#">Badminton</a>
+                  <a href="#">Volleyball</a>
+                  <a href="#">Shoes</a>
+                </div>
+              </div>
             </div>
             <div class="header-action">
-              <img src="./assets/icons/hamburger.svg" alt="" />
+              <img src="./assets/icons/hamburger.svg" alt="" id="navHam" />
             </div>
+          </div>
+        </div>
+      </div>
+      <div class="navigation-container hide-nav" id="navContainer">
+        <div class="navigation-box">
+          <img src="./assets/icons/cross-white.svg" id="navClose" alt="" />
+          <nav>
+            <a href="index.html" class="nav-item">Home</a>
+            <a href="about.html" class="nav-item">About</a>
+            <div class="multi-select-box">
+              <div class="nav-item multi-item-head">
+                Molten <img src="./assets/icons/arrow-down.svg" alt="" />
+              </div>
+              <div class="multi-select-items">
+                <a href="products.html" class="multi-select-item">
+                  <img src="./assets/img/molten1.jpeg" alt="" />
+                  <h3>Basketbal</h3>
+                </a>
+
+                <a href="products.html" class="multi-select-item"
+                  ><img src="./assets/img/molten2.jpeg" alt="" />
+                  <h3>Volleyball</h3></a
+                >
+                <a href="products.html" class="multi-select-item"
+                  ><img src="./assets/img/yonex-1.png" alt="" />
+                  <h3>Shoes</h3></a
+                >
+
+                <a href="products.html" class="multi-select-item"
+                  ><img src="./assets/img/molten2.jpeg" alt="" />
+                  <h3>Volleyball</h3></a
+                >
+                <a href="products.html" class="multi-select-item"
+                  ><img src="./assets/img/yonex-1.png" alt="" />
+                  <h3>Shoes</h3></a
+                >
+                <a href="products.html" class="multi-select-item"
+                  ><img src="./assets/img/molten1.jpeg" alt="" />
+                  <h3>Basketball</h3></a
+                >
+              </div>
+            </div>
+            <a href="events.html" class="nav-item">Events</a>
+            <a href="gallery.html" class="nav-item ">Gallery</a>
+            <a href="contact.html" class="nav-item">Contact</a>
+            <a href="badmintoncup.html" class="nav-item">Badminton Cup</a>
+          </nav>
+          <div class="nav-socials">
+            <a href="#" class="nav-social">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="#" class="nav-social">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
           </div>
         </div>
       </div>
